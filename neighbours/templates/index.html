@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content %}
+{{block.super}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <a href="{% url 'health'%}">
+                <div class="panel panel-default">
+                    <div class="panel heading" style="height:50px;">
+                        <p style="font-family: 'Cinzel', serif;">Medical Services</p>
+                    </div>
+                    <div class="panel-body" style="height:300px;">
+                        <div class="card" style="width: 22.5rem;height:15rem;">
+                            <img class="card-img-top dark"
+                                src="media/health.jpg"
+                                style="width:330px;height:250px;">
+                        </div>
+
+                    </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <a href="{% url 'businesses'%}">
+            <div class="panel panel-default">
+                <div class="panel heading" style="height:50px;">
+                    <p style="font-family: 'Cinzel', serif;">Businesses</p>
+                </div>
+                <div class="panel-body" style="height:300px;">
+                    
+                        <img class="card-img-top dark"
+                            src="media/business.jpg"
+                            style="width:330px;height:250px;">
+                    </div>
+                
+        </a>
+
+    </div>
+</div>
+<div class="col-md-4">
+    <a href="{% url 'authorities'%}">
+        <div class="panel panel-default">
+            <div class="panel heading" style="height:50px;">
+                <p style="font-family: 'Cinzel', serif;">Security</p>
+            </div>
+            <div class="panel-body" style="height:300px;">
+                <img class="card-img-top dark"
+                    src="media/authority.jpg"
+                    style="width:330px;height:250px;">
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}
