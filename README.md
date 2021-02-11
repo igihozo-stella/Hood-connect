@@ -30,7 +30,7 @@ postgres
 | :------------- | :------------- | :--------------- |
 | Load website | website url | Login page to see your neighbourhood/ sign up |
 | Create personal profile | Edit profile  | Updating of user information |
-| Search business |  business name | Business name and email |
+| Search blog |  blog title | Blog title,location and post |
 | Click on other elements on navbar | Click on health/business/username/admin | Redirected to other page containing more information on the element clicked |
 
 
@@ -42,7 +42,7 @@ It is run on a virtual environment.
 For user, open project on browser.
 
 ## Known Bugs
-The search button does not work properly
+tests for profile class failed.
 
 
 ## License
