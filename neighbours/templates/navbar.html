@@ -1,0 +1,41 @@
+{% load static %}
+<style>
+    li {
+        list-style-type: none;
+    }
+</style>
+<nav class="navbar navbar-default navigation-clean ">
+    <div class="dropdown-content" id="navbarSupportedContent">
+        <a class="navbar-brand" href="/" style="font-family: 'Cinzel', serif;">Neighbourhood</a>
+        <form class="form-inline my-2 my-lg-0" role="search" action="{% url 'search_results'%}" style="margin-top:10px;">
+            <input class="form-control mr-sm-2" type="search" aria-label="Search" name="blog" placeholder="blog title">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <ul class="navbar-right nav navbar-nav" style="display:inline-block;">
+
+            {% if user.is_superuser %}
+            <li class="nav-item">
+                <a class="nav-link" href="/admin">Admin</a>
+            </li>
+            {% endif %}
+
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'create-profile'%}"style="margin-top:-30px; font-family: 'Cinzel', serif;">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'update-profile' %}" style="margin-top:-30px; font-family: 'Cinzel', serif;">Edit Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/accounts/login" style="margin-top:-30px; font-family: 'Cinzel', serif;">Logout</a>
+            </li>
+
+            {% else %}
+            <li class="nav-item">
+                <a class="nav-link" href="/accounts/login" style="margin-top:-30px; font-family: 'Cinzel', serif;">Sign In</a>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+
+</nav>
