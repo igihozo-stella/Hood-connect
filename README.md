@@ -11,7 +11,7 @@ An app for neighbourhoods. This app helps neighbourhoods communicate by providin
 | :---------------------------- |
 | 1.Fork the repository to your work space. |
 | 2.Click on clone or download. |
-| 3.Run the git clone <'link copied'> on your terminal. |
+| 3.Run the git clone https://github.com/igihozo-stella/Hood-connect.git on your terminal. |
 | 4.Create a database and link it via settings. |
 | 5.Makemigrations and migrate. |
 | 6.Use the command python3.6 manage.py runserver to open the project on your browser. |
@@ -19,6 +19,10 @@ An app for neighbourhoods. This app helps neighbourhoods communicate by providin
 ## Technologies Used
 
 Python 3.6, Django
+HTML
+CSS
+restFramework
+postgres
 
 ## BDD
 
